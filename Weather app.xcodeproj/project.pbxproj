@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA0DDED1280757A300E4327F /* CurrentPositionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0DDED0280757A300E4327F /* CurrentPositionManager.swift */; };
+		FA0DDED32807581100E4327F /* WheatherObject .swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0DDED22807581100E4327F /* WheatherObject .swift */; };
 		FA166BA22801E38C006CC22B /* ResponseObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA166BA12801E38B006CC22B /* ResponseObject.swift */; };
 		FA526C2527F3A8F3009081FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA526C2427F3A8F3009081FA /* AppDelegate.swift */; };
 		FA526C2727F3A8F3009081FA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA526C2627F3A8F3009081FA /* SceneDelegate.swift */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FA0DDED0280757A300E4327F /* CurrentPositionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentPositionManager.swift; sourceTree = "<group>"; };
+		FA0DDED22807581100E4327F /* WheatherObject .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WheatherObject .swift"; sourceTree = "<group>"; };
 		FA166BA12801E38B006CC22B /* ResponseObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseObject.swift; sourceTree = "<group>"; };
 		FA526C2127F3A8F3009081FA /* Weather app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Weather app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA526C2427F3A8F3009081FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +76,8 @@
 				FA6C581F27F9ADFD00BDF9AA /* URLBuilder.swift */,
 				FA166BA12801E38B006CC22B /* ResponseObject.swift */,
 				FA6C582127FA196E00BDF9AA /* URLService.swift */,
+				FA0DDED0280757A300E4327F /* CurrentPositionManager.swift */,
+				FA0DDED22807581100E4327F /* WheatherObject .swift */,
 			);
 			path = "Weather app";
 			sourceTree = "<group>";
@@ -149,10 +155,12 @@
 			files = (
 				FA526C2927F3A8F4009081FA /* ViewController.swift in Sources */,
 				FA166BA22801E38C006CC22B /* ResponseObject.swift in Sources */,
+				FA0DDED1280757A300E4327F /* CurrentPositionManager.swift in Sources */,
 				FA6C582027F9ADFD00BDF9AA /* URLBuilder.swift in Sources */,
 				FA526C2527F3A8F3009081FA /* AppDelegate.swift in Sources */,
 				FA6C582227FA196E00BDF9AA /* URLService.swift in Sources */,
 				FA526C2727F3A8F3009081FA /* SceneDelegate.swift in Sources */,
+				FA0DDED32807581100E4327F /* WheatherObject .swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
