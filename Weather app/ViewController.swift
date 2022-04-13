@@ -16,11 +16,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         loadingFlag.startAnimating()
         super.viewDidLoad()
-        URLService.performRequset(URLBuilder: URLlBuilder(type: .search(city: "London"))) { [weak self] isSuccess, response in
-            print(response)
-            self?.loadingFlag.stopAnimating()
-            self?.loadingFlag.isHidden = true
-        }
+        CurrentPositionManagerImpl()
         
     }
 

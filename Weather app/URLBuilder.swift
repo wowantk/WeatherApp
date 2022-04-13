@@ -5,7 +5,7 @@
 import Foundation
 
 
-final class URLlBuilder {
+internal final class URLlBuilder {
     private var apiCurrentURL =  URLComponents(string: "https://api.openweathermap.org/data/2.5/weather?")
     private let apiKey = URLQueryItem(name: "appid", value: "32d3eaae37de69896ce7b715acb51275")
     

@@ -10,7 +10,6 @@ final class URLService {
         guard let url = URLBuilder.getURL() else {
             return
         }
-        print(url)
         
         let task = URLSession.shared.dataTask(with: url) { data, response, error in
             let result: Wheather?
@@ -22,13 +21,12 @@ final class URLService {
             }
             
             guard data != nil else {
-                print("NO DATA")
+                print("Data is Empty")
                 wrappedCompletion(false, nil)
                 return
             }
             
             guard error == nil else {
-                print(error!.localizedDescription)
                 wrappedCompletion(false, nil)
                 return
             }
@@ -37,11 +35,10 @@ final class URLService {
                 result =  try JSONDecoder().decode(Wheather.self, from: data!)
                 wrappedCompletion(true, result)
             } catch {
-                print(error.localizedDescription)
                 wrappedCompletion(false, nil)
             }
         }
         task.resume()
-        }
-
     }
+    
+}
