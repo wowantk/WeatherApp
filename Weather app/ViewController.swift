@@ -14,9 +14,8 @@ class ViewController: UIViewController {
     
 
     override func viewDidLoad() {
-        loadingFlag.startAnimating()
+        loadingFlag.isHidden = true
         super.viewDidLoad()
-        CurrentPositionManagerImpl()
         
     }
 
