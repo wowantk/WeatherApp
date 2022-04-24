@@ -27,8 +27,11 @@ internal final class URLlBuilder {
             return
         }
         let cityName = URLQueryItem(name: "q" , value: nameOfCity)
+        let units = URLQueryItem(name: "units", value: "metric")
         self.apiCurrentURL?.queryItems?.append(cityName)
         self.apiCurrentURL?.queryItems?.append(apiKey)
+        self.apiCurrentURL?.queryItems?.append(units)
+        
     }
     
     
@@ -38,9 +41,11 @@ internal final class URLlBuilder {
         }
         let latitudeKey = URLQueryItem(name: "lat", value: "\(latitude)")
         let longitudeKey = URLQueryItem(name: "lon", value: "\(longitude)")
+        let units = URLQueryItem(name: "units", value: "metric")
         self.apiCurrentURL?.queryItems?.append(latitudeKey)
         self.apiCurrentURL?.queryItems?.append(longitudeKey)
         self.apiCurrentURL?.queryItems?.append(apiKey)
+        self.apiCurrentURL?.queryItems?.append(units)
     }
     
 }

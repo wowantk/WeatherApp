@@ -21,7 +21,6 @@ final class URLService {
             }
             
             guard data != nil else {
-                print("Data is Empty")
                 wrappedCompletion(false, nil)
                 return
             }
